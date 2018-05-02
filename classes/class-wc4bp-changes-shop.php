@@ -21,23 +21,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 class wc4bpChangesShop {
 	public function __construct() {
 		/**
-		 *
+		 * @see class/core/wc4bp-component.php:42
 		 */
 		add_filter( 'wc4bp_shop_component_label', array( $this, 'change_shop_label' ) );
 		/**
-		 *
+		 * @see wc4bp-premium/class/core/wc4bp-component.php:167
 		 */
 		add_filter( 'bp_shop_link_label', array( $this, 'change_shop_label' ) );
 		/**
-		 *
+		 * @see wc4bp-premium/class/core/wc4bp-component.php:255
 		 */
 		add_filter( 'bp_shop_settings_nav_link_label', array( $this, 'change_shop_label' ) );
+		add_filter( 'bp_shop_settings_link_label', array( $this, 'change_shop_label' ) );
 		/**
-		 *
+		 * @see wc4bp-premium/class/core/wc4bp-component.php:274
 		 */
 		add_filter( 'bp_shop_nav_link_label', array( $this, 'change_shop_label' ) );
 		/**
-		 * @see wc4bp-premium/class/wc4bp-manager.php:91
+		 * @see wc4bp-premium/class/wc4bp-manager.php:99
 		 */
 		add_filter( 'wc4bp_shop_slug', array( $this, 'change_shop_slug' ), 1 );
 	}
