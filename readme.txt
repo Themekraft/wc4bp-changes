@@ -3,8 +3,8 @@
 Contributors: themekraft, gfirem
 Tags: WC4BP changes, WC4BP customization, WC4BP personalization
 Requires at least: 4.0
-Tested up to: 4.9.5
-Stable tag: 0.0.1
+Tested up to: 5.2.2
+Stable tag: 1.0.0
 License: GPLv3
 
 Customize your WC4BP installation from code.
@@ -32,6 +32,9 @@ Head to the 'WC4BP Settings' menu item in your admin sidebar to adjust the setti
 
 
 == Changelog ==
+= 1.0.0 28 june 2019 =
+* Added an example to extend the Activity Stream output.
+
 = 0.0.1 =
 * Including a code to customize the url of the shop.
 * Including a code to change the Shop Label in different places.

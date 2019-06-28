@@ -42,22 +42,22 @@ class wc4bpChangesShop {
 		 */
 		add_filter( 'wc4bp_shop_slug', array( $this, 'change_shop_slug' ), 1 );
 	}
-	
+
 	/**
 	 * Change the Store label in the different places
 	 *
 	 * @return string
 	 */
 	public function change_shop_label() {
-		return __( 'Store', 'wc4bp-changes-locale' );
+		return __( 'Code Store', 'wc4bp-changes-locale' );
 	}
-	
+
 	/**
 	 * Change the slug for the shop
 	 *
 	 * @return string
 	 */
 	public function change_shop_slug() {
-		return 'my_store';
+		return 'code_store';
 	}
 }

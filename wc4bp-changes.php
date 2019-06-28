@@ -1,17 +1,17 @@
 <?php
 /**
  * Plugin Name: WC4BP -> Changes
- * Description: Customize your WC4BP installation from code
+ * Description: Customize your WC4BP installation from code. EXAMPLE CUSTOMIZATIONS FROM CODE!
  * Author: ThemeKraft Team
  * Author URI: https://themekraft.com/products/woocommerce-buddypress-integration/
- * Version: 0.0.1
+ * Version: 1.0.0
  * Licence: GPLv3
  * Text Domain: wc4bp-changes-locale
  * Domain Path: /languages
  *
  *****************************************************************************
- * WC requires at least: 3.0.0
- * WC tested up to: 3.3.3
+ * WC requires at least: 3.6.4
+ * WC tested up to: 3.6.4
  *****************************************************************************
  *
  * This script is free software; you can redistribute it and/or modify
@@ -36,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! class_exists( 'wc4bpChanges' ) ) {
-	
+
 	class wc4bpChanges {
 		/**
 		 * Instance of this class.
@@ -56,7 +56,7 @@ if ( ! class_exists( 'wc4bpChanges' ) ) {
 		 * @var string
 		 */
 		public static $view;
-		
+
 		/**
 		 * Initialize the plugin.
 		 */
@@ -64,9 +64,9 @@ if ( ! class_exists( 'wc4bpChanges' ) ) {
 			self::$assets = plugin_dir_url( __FILE__ ) . '/assets/';
 			self::$view   = dirname( __FILE__ ) . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR;
 			add_action( 'plugins_loaded', array( $this, 'init' ), 1 );
-			
+
 		}
-		
+
 		/**
 		 * Initialize the Manager
 		 */
@@ -74,7 +74,7 @@ if ( ! class_exists( 'wc4bpChanges' ) ) {
 			require 'classes' . DIRECTORY_SEPARATOR . 'class-wc4bp-changes-manager.php';
 			new wc4bpChangesManager();
 		}
-		
+
 		/**
 		 * Return an instance of this class.
 		 *
@@ -85,10 +85,10 @@ if ( ! class_exists( 'wc4bpChanges' ) ) {
 			if ( null == self::$instance ) {
 				self::$instance = new self;
 			}
-			
+
 			return self::$instance;
 		}
-		
+
 		/**
 		 * Load the plugin text domain for translation.
 		 */
@@ -96,7 +96,7 @@ if ( ! class_exists( 'wc4bpChanges' ) ) {
 			load_plugin_textdomain( 'wc4bp-changes-locale', false, basename( dirname( __FILE__ ) ) . '/languages' );
 		}
 	}
-	
+
 	/**
 	 * Load the plugin at this point to ensure the correct execution of the hooks.
 	 */
