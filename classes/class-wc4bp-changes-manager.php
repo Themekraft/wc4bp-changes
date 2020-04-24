@@ -21,8 +21,10 @@ class wc4bpChangesManager {
 			if ( ! empty( $freemius ) && $freemius->is_plan__premium_only( 'professional' ) ) {
 				require 'class-wc4bp-changes-shop.php';
 				require 'class-wc4bp-changes-activity-stream.php';
+				require 'class-wc4bp-force-visibility.php';
 				new wc4bpChangesShop();
 				new wc4bpChangesActivityStream();
+				new wc4bpForceVisibility();
 			} else {
 				add_action( 'admin_notices', array( $this, 'required_wc4bp_pro' ) );
 			}
