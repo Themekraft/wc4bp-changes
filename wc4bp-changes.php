@@ -1,17 +1,17 @@
 <?php
 /**
- * Plugin Name: WC4BP -> Changes
- * Description: Customize your WC4BP installation from code. EXAMPLE CUSTOMIZATIONS FROM CODE!
+ * Plugin Name: WooBuddy -> Changes
+ * Description: Customize your WooBuddy installation from code. EXAMPLE CUSTOMIZATIONS FROM CODE!
  * Author: ThemeKraft Team
  * Author URI: https://themekraft.com/products/woocommerce-buddypress-integration/
- * Version: 1.0.0
+ * Version: 1.0.1
  * Licence: GPLv3
  * Text Domain: wc4bp-changes-locale
  * Domain Path: /languages
  *
  *****************************************************************************
  * WC requires at least: 3.6.4
- * WC tested up to: 3.6.4
+ * WC tested up to: 4.8.0
  *****************************************************************************
  *
  * This script is free software; you can redistribute it and/or modify

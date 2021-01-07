@@ -1,17 +1,17 @@
-=== WC4BP -> Changes ===
+=== WooBuddy -> Changes ===
 
 Contributors: themekraft, gfirem
-Tags: WC4BP changes, WC4BP customization, WC4BP personalization
+Tags: WooBuddy changes, WooBuddy customization, WooBuddy personalization
 Requires at least: 4.0
 Tested up to: 5.2.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv3
 
-Customize your WC4BP installation from code.
+Customize your WooBuddy installation from code.
 
 == Description ==
 
-This plugin contain some code examples related to the customization of WC4BP installation.
+This plugin contain some code examples related to the customization of WooBuddy installation.
 
 > #### Follow Us
 > [Blog](https://themekraft.com/blog/) | [Twitter](https://twitter.com/themekraft) | [Facebook](https://www.facebook.com/themekraft/)
@@ -23,15 +23,19 @@ This plugin contain some code examples related to the customization of WC4BP ins
 ---
 
 #### Tags
-Tags: WC4BP changes, WC4BP customization, WC4BP personalization
+Tags: WooBuddy changes, WooBuddy customization, WooBuddy personalization
 
 == Installation ==
-Upload the entire WC4BP folder to the /wp-content/plugins/ directory or install the plugin through the WordPress plugins screen directly.
+Upload the entire WooBuddy folder to the /wp-content/plugins/ directory or install the plugin through the WordPress plugins screen directly.
 Activate the plugin through the 'Plugins' menu in WordPress.
-Head to the 'WC4BP Settings' menu item in your admin sidebar to adjust the settings
+Head to the 'WooBuddy Settings' menu item in your admin sidebar to adjust the settings
 
 
 == Changelog ==
+= 1.0.1 - 7 Jan 2021 =
+* Change name to WooBuddy -> Subscriptions.
+* Maintenance review.
+
 = 1.0.0 28 june 2019 =
 * Added an example to extend the Activity Stream output.
 
